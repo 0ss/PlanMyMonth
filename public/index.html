@@ -5,13 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="./styles.scss">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <script src="https://kit.fontawesome.com/2ed7322c6b.js" crossorigin="anonymous"></script>
+
+    <style>
+      *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+      }
+      body::-webkit-scrollbar {
+        width: 0.3rem;
+      }
+
+      body::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: #6649b8;
+      }
+      body{
+        height: 100%;
+        scroll-padding-top: var(--top-spacing);
+        margin: var(--top-spacing) auto;
+
+      }
+      input[type="radio"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      }
+    
+      .dark-bg{
+        background-color:#1f1f1f ;      
+      }
+      .dark-light-bg{
+        background-color:#282828 ;
+      }
+      .dark-input-bg{
+        background-color:#363636 ;
+      }
+      .hover-dark-light:hover{
+        background-color:#282828 ;
+      }
+      .hover-dark-light-link:hover{
+        background-color:#525252 ;
+      }
+
+      /* .lightmode-text{
+        color: black !important;
+      }
+      .light-bg{
+        background-color: white;
+      }
+      .light-input-bg{
+        background-color:#ececec !important;
+      }
+      .light-light-bg{
+        background-color:#f3f3f3 !important;
+      }
+      .hover-light-light:hover{
+        background-color:#dfdfdf !important ;
+      }
+      .white-bg{
+        background-color: white !important;
+      }
+       */
+
+    </style>
   </head>
-  <body>
+  <body class="dark-bg">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
