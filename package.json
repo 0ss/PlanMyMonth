@@ -4,26 +4,23 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "build": "vue-cli-service build",
     "test": "jest",
     "watch": "postcss css/tailwind.css -o public/build/tailwind.css --watch"
   },
   "dependencies": {
-    "@tailwindcss/postcss7-compat": "^2.0.2",
-    "autoprefixer": "^9.8.6",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "fetch": "^1.1.0",
     "node-fetch": "^2.6.1",
-    "postcss": "^7.0.35",
     "postcss-cli": "^8.3.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "uuid": "^8.3.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "^4.5.10",
@@ -31,8 +28,12 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/test-utils": "^2.0.0-0",
+    "autoprefixer": "^9.8.6",
     "node-sass": "^4.12.0",
+    "postcss": "^7.0.35",
+    "postcss-loader": "^5.0.0",
     "sass-loader": "^8.0.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0"
   }
