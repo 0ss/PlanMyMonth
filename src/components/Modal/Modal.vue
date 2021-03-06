@@ -238,10 +238,15 @@ export default {
             this.$store.dispatch('addTask', {
                 id, date, task, comments, priority, selectedTags, finish, project
             })
+            console.log(this.data, this.project)
             this.showModal = false;
             this.task = "";
             this.comments = "";
-            this.project = "";
+            if(this.project){
+                this.project = "";
+            }
+            console.log(this.project)
+
             this.selectedTags = [];
 
         },

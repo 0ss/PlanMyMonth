@@ -132,7 +132,12 @@ export default {
   },
   methods: {
     getPrecent(tasks, finished){
-      return `${ String((finished/tasks)*100).substring(0,3) }%`
+     // if(NaN( (finished/tasks)*100))
+      return (
+         isNaN( (finished/tasks)*100) ? '0%' 
+         : `${ String((finished/tasks)*100).substring(0,3) }%`
+      ) ;
+
     }
   }
   

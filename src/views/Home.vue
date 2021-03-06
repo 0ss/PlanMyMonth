@@ -12,7 +12,7 @@
             </div>
         </div>
         <div>
-        <div class="flex flex-col w-2/5 justify-center my-3 mx-auto pt-7 pb-4 px-6 border rounded bg-white font-normal">
+        <div class="demo-box flex flex-col w-3/5 justify-center my-3 mx-auto pt-7 pb-4 px-6 border rounded font-normal">
                 <div class="text-center">
                       PMM is only available as a demo. Your work will be saved to local storage and 
                     <span class="font-bold">
@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </div>
-        <div class="flex flex-col justify-center p-32 bg-white">
+        <div class="footer flex flex-col justify-center p-32 bg-white">
             asdsa
         </div>
     </div>
@@ -71,7 +71,7 @@
 .home-bg{
     height: 100vh;
     width:100%;
-    background: #f2f2f2;
+    background: #ffffff;
 }
 .head-text{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif ;
@@ -80,9 +80,15 @@
 .small-text{
    color: #888;
 }
-.demo-btn{
-    background: #85144b;
+.demo-box{
+    background: #f2f2f2;
 
 }
+.demo-btn{
+    background: #85144b;
+}
+.footer{
+    background: #f2f2f2;
 
+}
 </style>
