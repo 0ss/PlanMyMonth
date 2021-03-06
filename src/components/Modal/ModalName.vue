@@ -94,7 +94,6 @@ export default {
     }, 
     watch: {
         icon(){
-            console.log(this.icon)
         }
     }
   

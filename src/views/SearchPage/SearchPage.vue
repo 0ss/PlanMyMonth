@@ -3,6 +3,8 @@
 
  <side-bar :show="showSideBar">
   </side-bar>
+
+  
     <top-bar @hide="showSideBar = !showSideBar">
   </top-bar>
 
@@ -89,7 +91,7 @@ export default {
       getFromStore(){
         switch(this.type){
           case 'task':
-            const searchedTask = this.tasks.filter(e => e.task == this.searchedInput);
+            const searchedTask = this.tasks.filter(e => e.task.includes(this.searchedInput));
             this.resultsFromStore = searchedTask;
             this.noResult = this.resultsFromStore.length <= 0; 
             break;
@@ -105,14 +107,12 @@ export default {
               }  
             });
             this.resultsFromStore = searchedTag;
-            //console.log(this.resultsFromStore)
             this.noResult = this.resultsFromStore.length <= 0; 
             break;
 
           case 'priority':
             const searchedPriority = this.tasks.filter(e => e.priority.toLowerCase() == this.searchedInput);
             this.resultsFromStore = searchedPriority;
-            //console.log(searchedPriority, this.resultsFromStore)
             this.noResult = this.resultsFromStore.length <= 0;
             break;
           

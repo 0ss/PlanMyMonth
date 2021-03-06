@@ -112,7 +112,6 @@ export default {
     }
   },
    beforeRouteUpdate (to, from, next) {
-    console.log(to.params.project)
     this.searchedProject = to.params.project;
     this.getProjectFromStore;
     next();
@@ -121,11 +120,9 @@ export default {
       this.searchedProject = this.$route.params.project;
       this.getProjectFromStore;
       this.getDate;
-      console.log('here', this.project)
   },
   methods:{
     removeProject(id){
-      console.log(id)
       this.$store.dispatch('removeProject', {id});
       this.$router.push('/app/')
     }
@@ -147,23 +144,19 @@ export default {
       getProjectFromStore(){
       const { projects } = this.$store.state;
       projects.forEach(e => {
-        console.log('x',e.project, this.searchedProject, e.project == this.searchedProject)
       })
       this.project = projects.filter(e => e.project == this.searchedProject)[0];
-      //console.log(this.project, 'after')
       return 
       },
       getDate(){
           if(this.noAssignDate || !this.date){
               return null;
           }
-          console.log(new Date(this.date).toString().substring(0,16))
           return  new Date(this.date).toString().substring(0,16);
       }
     },
     watch: {
       date(){
-      //  console.log(new Date(this.date))
       }
     }
 }

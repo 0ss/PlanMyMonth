@@ -45,7 +45,6 @@ export default createStore({
       localStorage.setItem('tasks',JSON.stringify(state.tasks));
     },
     removeProject(state, id){
-      console.log('id', id, state.projects)
       const project = state.projects.filter(project => project.id == id)[0]?.project
       state.projects = state.projects.filter(project => project.id !== id)
       localStorage.setItem('projects',JSON.stringify(state.projects));
@@ -55,7 +54,6 @@ export default createStore({
 
     },
     finishTask(state, {id, finish}){
-      console.log(id, finish)
       state.tasks = state.tasks.map(task =>{
         if(task.id == id){
           task.finish = finish;
@@ -110,10 +108,8 @@ export default createStore({
     cleanStore({commit}){
       const tasks = JSON.parse(localStorage.getItem('tasks'));
       const today = Date.now();
-      console.log(tasks)
       const cleanedTasks = tasks.filter(e => {
         if( ((today-new Date(e.date).getTime())/1000) > (84600*2) ){
-          console.log(e.date, false)
           return false
         }
         return true
@@ -124,19 +120,15 @@ export default createStore({
     },
     addTask({commit}, task){
      commit('addTask',task )
-     // console.log( task, comments, priority, selectedTags)
     },
     addProject({commit}, project){
      commit('addProject',project )
-     // console.log( task, comments, priority, selectedTags)
     },
     removeTask({commit}, {id}){
       commit('removeTask',id )
-      // console.log( task, comments, priority, selectedTags)
      },
      removeProject({commit}, {id}){
       commit('removeProject',id )
-      // console.log( task, comments, priority, selectedTags)
      },
      finishTask({commit}, payload){
        commit('finishTask', payload)

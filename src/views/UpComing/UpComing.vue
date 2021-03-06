@@ -60,7 +60,6 @@ export default {
       for(let i =1; i<=this.period; i++){
           dates.push(new Date(new Date().getTime()+86400000*i).toString().substring(0,16))
       }  
-      console.log(dates)
       return dates
     },
     ...mapState(['tasks'])

@@ -53,7 +53,6 @@ export default {
     computed:{
         getName(){
             const { name } = this.$store.state; 
-            console.log(Boolean(name))
             return name ? name : "What's your name?"
         }
     },

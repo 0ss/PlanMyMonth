@@ -137,12 +137,9 @@ export default {
           return  this.selectedTags ? this.selectedTags : 'No tags for this task' 
         }
     },
-    mounted(){
-        console.log(this.finish)
-    },
+   
     watch :{
         finish(){
-            console.log(this.finish)
             const { id , finish} = this;
             this.$store.dispatch('finishTask', { id, finish })
         }

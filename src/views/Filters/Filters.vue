@@ -67,7 +67,6 @@ export default {
   },
   created(){
       this.filterInput = this.$route.params.input;
-      console.log(filterInput)
       this.getTaskInfo();
       
   },
@@ -83,7 +82,6 @@ export default {
         
           const searchedTask = this.tasks.filter(e => e.task == this.searchedTask);
           this.tasksSameName = searchedTask;
-          console.log(this.tasksSameName.length)
       }
   },
   computed :mapState(['tasks'])

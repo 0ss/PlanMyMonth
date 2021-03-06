@@ -151,8 +151,6 @@ export default {
   },
   watch:{
     show(){
-      console.log(this.show)
-     // console.log(document.getElementById("sidebar"))
     }
   }
 }
@@ -160,7 +158,8 @@ export default {
 <style lang="scss">
 
 .sidebar{
-  transition: top ease 0.5s;
+      transition: top ease 0.5s;
+
   overflow-y: scroll;
   &::-webkit-scrollbar {
     width: 0.3rem;

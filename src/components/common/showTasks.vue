@@ -126,7 +126,6 @@ export default {
                 return tasks.filter(task => task.project === this.projectName )
             }
             else if(this.finishedTasksProject){
-                console.log(this.finishedTasksProject)
              return this.$store.state.tasks.filter(e => e.project == this.finishedTasksProject && e.finish)
 
             }

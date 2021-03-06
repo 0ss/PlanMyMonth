@@ -109,7 +109,6 @@ export default {
     }
   },
   mounted(){
-    console.log('stat',this.projects)
   },
   computed:{
     ...mapState(['projects']),
@@ -124,11 +123,10 @@ export default {
       return this.$store.state.projects.length;
     },
     numOfTasksFin(){
-      //console.log(this.$store.state.tasks)
+   
       return this.$store.state.tasks.filter(e => e.finish).length;
     },
     numOfTasksUnFin(){
-      console.log('un finish' , this.$store.state.tasks.filter(e => !e.finish))
       return this.$store.state.tasks.filter(e => !e.finish).length;
     }
   },
