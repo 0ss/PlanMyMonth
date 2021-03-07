@@ -1,24 +1,26 @@
 .DS_Store
 node_modules
 /dist
-tailwind.css
+.css
 
 
 # local env files
 .env.local
 .env.*.local
-tailwind.css
+.css
 
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-tailwind.css
+.css
 
 # Editor directories and files
 .idea
 .vscode
+tailwind.css
+*.css
 *.suo
 *.ntvs*
 *.njsproj
