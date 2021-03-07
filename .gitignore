@@ -19,7 +19,7 @@ pnpm-debug.log*
 # Editor directories and files
 .idea
 .vscode
-tailwind.css
+*.css
 *.css
 *.suo
 *.ntvs*
