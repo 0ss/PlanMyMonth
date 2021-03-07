@@ -61,7 +61,7 @@ export default {
     },
     computed:{
         numOfProjectsTasks(){
-           return this.$store.state.tasks.filter(e => e.project = this.project).length;
+           return this.$store.state.tasks.filter(e => e.project == this.project).length;
         },
         getFinishedProjectTasks(){
             return this.$store.state.tasks.filter(e => e.project == this.project && e.finish)

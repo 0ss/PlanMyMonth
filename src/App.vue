@@ -11,6 +11,11 @@ export default{
   created(){
     this.$store.dispatch('initStore');
     this.$store.dispatch('cleanStore');
+  },
+  mounted(){
+    this.$store.state.tasks.forEach(element => {
+      console.log(element)
+    });
   }
 }
 

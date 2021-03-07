@@ -115,8 +115,12 @@
                 
             </ul>
         </div>
-        <div class="footer flex flex-col justify-center p-32 bg-white">
-            asdsa
+        <div class="footer flex flex-col justify-center mt-24 p-12 bg-white">
+            <div class="flex flex-col mx-auto">
+                <a href="https://github.com/akaSalah/PlanMyMonth">
+                     <i class="fa fa-github" style="font-size:36px"></i>
+                </a>
+            </div>
         </div>
     </div>
 </template>
