@@ -30,7 +30,7 @@
                             <input 
                                 
                                 class="task p-1 rounded border-gray-300 outline-none dark-input-bg"
-                                placeholder="Math homework from page 10 first question"
+                                :placeholder="type=='Project' ? 'Learning French' :'Math homework from page 10 first question'"
                                 v-model="task"
                             >
                         </div>
