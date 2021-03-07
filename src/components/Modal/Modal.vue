@@ -196,6 +196,7 @@ export default {
         return{
             showModal:false,
             task: "",
+            projectName: "",
             comments: "",
             priorities: ['High', 'Medium', 'Low', 'None'],
             tags:['Family','Personal', 'Work'],
@@ -228,9 +229,11 @@ export default {
                 this.submitProject();
                 return
             }
+            console.log(this.project)
             const {date, task, comments, priority} = this;
             const finish = false; 
-            const project = this.project ? this.project : ''
+            const { project }= this;
+
             if(!task)
                 return;
             const selectedTags = Object.values(this.selectedTags) 
@@ -238,14 +241,9 @@ export default {
             this.$store.dispatch('addTask', {
                 id, date, task, comments, priority, selectedTags, finish, project
             })
-            console.log(this.data, this.project)
             this.showModal = false;
             this.task = "";
             this.comments = "";
-            if(this.project){
-                this.project = "";
-            }
-            console.log(this.project)
 
             this.selectedTags = [];
 
