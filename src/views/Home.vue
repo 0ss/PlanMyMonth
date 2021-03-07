@@ -29,6 +29,9 @@
                 </router-link>
             </div>
         </div>
+        <div class="w-9/12 my-16 mx-auto shadow-2xl">
+            <img src="../../public/p2.png" class="rounded-md">
+        </div>
         <div class="flex flex-col mx-auto">
             <div class="head-text my-5 mx-auto text-3xl">
                Main Features
@@ -36,7 +39,7 @@
             <ul class="w-4/6 text-base font-normal mx-auto  list-disc">
                 <li>
                     <span class="font-medium">
-                        Organzing task up to one month - 
+                        Organzing tasks up to one month - 
                     </span>
                    the ability of adding task for any day up to month
                 </li>
@@ -50,19 +53,19 @@
                     <span class="font-medium">
                         Calendar -
                     </span>
-                   view task for today, this week and this month
+                   view tasks for today, this week and this month
                 </li>
                 <li>
                     <span class="font-medium">
                         Assigning tags -
                     </span>
-                    for tasks with option of adding new tags, used for making seperation of task easier               
+                    for tasks, with option of adding new tags, used for making seperation of tasks easier               
                 </li>
                 <li>
                     <span class="font-medium">
                         Setting priority for tasks -
                     </span>
-                    Tasks can have priority with colored flag next to them that will appear on the app
+                    tasks can have priority with colored flag next to them that will appear on the app
                 </li>
                 <li>
                     <span class="font-medium">
@@ -74,7 +77,7 @@
                     <span class="font-medium">
                         Adding favourite project -
                     </span>
-                    that would on a seperate place from the all projects
+                    that would be on the sidebar on a seperate place from the all projects
                 </li>
                 <li>
                     <span class="font-medium">
@@ -104,7 +107,7 @@
                     <span class="font-medium">
                         Filter tasks -
                     </span>
-                    by either the priority ( e.g show only high priotity task) or filter task by tags ( e.g show only task with the tag 'work')
+                    by either the priority ( e.g show only high priority task) or filter task by tags ( e.g show only task with the tag 'work')
                 </li>
                 <li>
                     <span class="font-medium">
@@ -114,6 +117,9 @@
                 </li>
                 
             </ul>
+        </div>
+        <div class="w-9/12 my-16 mx-auto shadow-2xl">
+            <img src="../../public/p1.png" class="rounded-md">
         </div>
         <div class="footer flex flex-col justify-center mt-24 p-12 bg-white">
             <div class="flex flex-col mx-auto">
@@ -150,7 +156,9 @@
 
 }
 .demo-btn{
-    background: #85144b;
+    background:#FF4136
+
+;
 }
 .footer{
     background: #f2f2f2;

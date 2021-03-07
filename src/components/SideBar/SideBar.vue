@@ -17,7 +17,7 @@
             <router-link to= "/app/upcoming/week" 
             >
               <span class="transition hover:text-gray-300">
-                🗓️ This week 
+                🗓️ This Week 
               </span>
             </router-link>
           </li>
