@@ -72,7 +72,7 @@ export default {
     },
     methods: {
         getPrecent(tasks, finished){
-            return `${ String((finished/tasks)*100).substring(0,3) }%`
+            return `${ String((finished/tasks)*100).substring(0,4) }%`
         }
     }
 }
