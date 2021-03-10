@@ -109,6 +109,9 @@ export default createStore({
       const tasks = JSON.parse(localStorage.getItem('tasks'));
       const today = Date.now();
       const cleanedTasks = tasks.filter(e => {
+          if(!e.date){
+            return true
+          }
         if( ((today-new Date(e.date).getTime())/1000) > (84600*2) ){
           return false
         }
