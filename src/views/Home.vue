@@ -4,8 +4,10 @@
             <div>
                 <img src="../../public/PMM.png" class="mx-auto" >
             </div>
-            <div class="head-text mt-3 text-4xl ">
-                Plan My Month App
+            <div class="head-text mt-3 text-3xl font-light text-center ">
+               <span class="font-normal">P</span>lan 
+               <span class="font-normal">M</span>y 
+               <span class="font-normal">M</span>onth App
             </div>
             <div class="small-text my-3">
                 A web-based app for organzing people's month easily.
@@ -155,13 +157,14 @@
     background: #f2f2f2;
 
 }
-.demo-btn{
-    background:#FF4136
 
-;
-}
-.footer{
-    background: #f2f2f2;
+.demo-btn{
+    background:#6a9dfb;
+    &:hover{
+        background:#6a9dfbcb;
+        transition: 0.3s;
+
+    }
 }
 ul{
     li{
