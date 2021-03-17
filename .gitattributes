@@ -1,5 +1,4 @@
-* linguist-vendored
-.js linguist-vendored=false
-.vue linguist-vendored=false
-.html linguist-vendored=false
-#ds
+*.vue linguist-detectable=true
+*.js linguist-detectable=true
+*.html linguist-detectable=true
+#*.x linguist-detectable=true
