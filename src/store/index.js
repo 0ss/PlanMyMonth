@@ -108,6 +108,7 @@ export default createStore({
     cleanStore({commit}){
       const tasks = JSON.parse(localStorage.getItem('tasks'));
       const today = Date.now();
+
       const cleanedTasks = tasks.filter(e => {
           if(!e.date){
             return true
@@ -117,6 +118,7 @@ export default createStore({
         }
         return true
       });
+      console.log(cleanedTasks)
       commit('setTasks', JSON.stringify(cleanedTasks))
       commit('setTasksToStorage')
       return;

@@ -7,8 +7,10 @@
                     </open-icon>
                 </li>
                 <li class="mt-1 px-1.5 cursor-pointer" > 
-                   <home-icon color="white">
-                   </home-icon>
+                   <router-link to="/">
+                       <home-icon color="white">
+                        </home-icon>
+                   </router-link>
                 </li>
                 <li>
                     <search>
