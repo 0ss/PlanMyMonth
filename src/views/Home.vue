@@ -166,6 +166,9 @@
 
     }
 }
+.footer{
+    background: #f2f2f2;
+}
 ul{
     li{
         margin:5px 0;
