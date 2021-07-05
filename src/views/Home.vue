@@ -111,12 +111,13 @@
                     </span>
                     by either the priority ( e.g show only high priority task) or filter task by tags ( e.g show only task with the tag 'work')
                 </li>
-                <li>
+                <!-- <li>
                     <span class="font-medium">
                        No tracking or analytics -
                     </span>
                     'nuff said
                 </li>
+                -->
                 
             </ul>
         </div>
