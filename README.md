@@ -1,4 +1,3 @@
 # PMM
 Live demo 
-https://planmymonth.xyz/
-
+https://planmymonth.pages.dev/
